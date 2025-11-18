@@ -25,7 +25,7 @@ SELECT
     STDDEV(bike_rental_count) AS stddev_rentals
 FROM bike_data;
 
--- 4. Quick null-value check
+-- 3. Quick null-value check
 SELECT 
     SUM(CASE WHEN bike_rental_count IS NULL THEN 1 ELSE 0 END) AS null_rentals,
     SUM(CASE WHEN temperature_f     IS NULL THEN 1 ELSE 0 END) AS null_temp,
@@ -33,7 +33,7 @@ SELECT
     SUM(CASE WHEN rainfall_mm       IS NULL THEN 1 ELSE 0 END) AS null_rain
 FROM bike_data;
 
--- 5. Sample of raw data
+-- 4. Sample of raw data
 SELECT *
 FROM bike_data
 ORDER BY date, hour
