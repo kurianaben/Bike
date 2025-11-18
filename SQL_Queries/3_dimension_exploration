@@ -1,1 +1,17 @@
+/*____________________________________________________________________
+Dimension Exploration
 
+Purpose:
+-To analyze how rentals differ across various categories or conditions (season, holiday, weather).
+
+What it answers:
+-Which season has the most rentals?
+-Do holidays impact demand?
+-How does weather influence rentals?
+-How do environmental variables (rain, humidity, temperature) affect behavior?
+
+Why it's important:
+-This reveals the external factors that shape demand, helping identify what drives usage.
+
+____________________________________________________________________ */
+--QUERIES
