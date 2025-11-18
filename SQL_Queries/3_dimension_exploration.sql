@@ -28,7 +28,7 @@ FROM bike_data
 GROUP BY holiday
 ORDER BY avg_rentals DESC;
 
--- 4. Temperature bands
+-- 3. Temperature bands
 SELECT
     CASE
         WHEN temperature_f < 32 THEN 'Freezing (<32°F)'
@@ -43,7 +43,7 @@ FROM bike_data
 GROUP BY temp_band
 ORDER BY avg_rentals DESC;
 
--- 5. Rain vs dry
+-- 4. Rain vs dry
 SELECT
     CASE WHEN rainfall_mm > 0 THEN 'Rainy' ELSE 'Dry' END AS rain_flag,
     AVG(bike_rental_count) AS avg_rentals,
